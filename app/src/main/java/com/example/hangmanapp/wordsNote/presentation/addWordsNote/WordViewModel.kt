@@ -1,12 +1,13 @@
 package com.example.hangmanapp.wordsNote.presentation.addWordsNote
 
+
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.hangmanapp.wordsNote.domain.model.Word
 import com.example.hangmanapp.wordsNote.domain.useCase.WordUseCases
 import com.example.hangmanapp.wordsNote.domain.util.OrderType
 import com.example.hangmanapp.wordsNote.domain.util.WordOrder
-import dagger.hilt.android.HiltAndroidApp
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -15,7 +16,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-@HiltAndroidApp
+@HiltViewModel
 class WordViewModel @Inject constructor(
   private val wordUseCases: WordUseCases
 ) : ViewModel() {
