@@ -13,7 +13,7 @@ import kotlinx.coroutines.flow.Flow
 interface WordsDao {
 
   @Query("SELECT * FROM word")
-  fun getWord(): Flow<List<Word>>
+  fun getWords(): Flow<List<Word>>
 
   @Query("SELECT * FROM word WHERE id=:id")
   suspend fun getWordById(id: Int): Word?

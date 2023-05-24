@@ -10,7 +10,7 @@ class WordRepositoryImpl(
 ) : WordRepository {
 
   override fun getWord(): Flow<List<Word>> {
-    return dao.getWord()
+    return dao.getWords()
   }
 
   override suspend fun getWordById(id: Int): Word? {

@@ -1,7 +1,8 @@
-package com.example.hangmanapp.wordsNote.domain.repository
+package com.example.hangmanapp.wordsNote.domain.useCase
 
 import com.example.hangmanapp.wordsNote.domain.model.InvalidWordException
 import com.example.hangmanapp.wordsNote.domain.model.Word
+import com.example.hangmanapp.wordsNote.domain.repository.WordRepository
 import kotlin.jvm.Throws
 
 class AddWord(
