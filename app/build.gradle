@@ -49,6 +49,7 @@ android {
   }
 }
 
+
 dependencies {
 
   implementation 'androidx.core:core-ktx:1.8.0'
@@ -104,6 +105,10 @@ dependencies {
 
   //coil for imagery using compose
   implementation('io.coil-kt:coil-compose:2.1.0')
+
+  // Room dependencies
+  implementation 'androidx.room:room-ktx:2.4.1'
+  kapt 'androidx.room:room-ktx:2.3.0'
 
   //constraintLayout
   implementation "androidx.constraintlayout:constraintlayout-compose:1.0.1"
